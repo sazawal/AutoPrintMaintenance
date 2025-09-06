@@ -272,8 +272,8 @@ test_job() {
 show_help() {
     cat <<EOF
 
-Auto-Print-Maintenance to auto print a test page with all the different
-colors to prevent the printer ink from drying out.
+AutoPrintMaintenance schedules a regular auto print job to print a test page with all the
+different colors to prevent the printer ink from drying out.
 
 Usage: $LAUNCHER_NAME [command]
 
@@ -283,7 +283,7 @@ Commands:
   view       View job info, status, schedule, printer name, and open sample PDF
   configure  Create or overwrite the systemd primauto print job
   clear      Disable and delete the systemd primauto print job (service and timer files)
-  test       Immediately run the print script once
+  test       Verify the systemd print job, and print the test page.
   help       Show this help message
 
 systemd job name: $JOB_NAME
